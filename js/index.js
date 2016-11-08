@@ -3,12 +3,10 @@ calcQuad();
     var a = Number(prompt('Input a'));
     var b = Number(prompt('Input b'));
     var c = Number(prompt('Input c'));
-    var result;
     
     var discr = (Math.pow(b, 2))- 4 * a * c;
     
     function calcQuad(x) {
-        
     if (discr === 0) {
        result = 'there is only one root';
     }
@@ -22,7 +20,9 @@ calcQuad();
         result = 'x1 = ' + x1 + ', x2 = ' + x2;
     }
     
-     document.write(result);
+    //var discr = Number(prompt('Tell your number'));//
+    var result = calcQuad(x);
+    document.write(result);
 }
 
  
