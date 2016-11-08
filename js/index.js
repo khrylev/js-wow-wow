@@ -6,7 +6,7 @@ calcQuad();
     
     var discr = (Math.pow(b, 2))- 4 * a * c;
     
-    function calcQuad(x) {
+    function calcQuad(x){
     if (discr === 0) {
        result = 'there is only one root';
     }
