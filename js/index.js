@@ -1,7 +1,8 @@
 calcQuad();
-  function calcQuad(x){
-    
-    var a = Number(prompt('Input a'));
+    function calcQuad() {
+    var result;
+
+    var a = Number(prompt('Input a (a ≠ 0)'));
     var b = Number(prompt('Input b'));
     var c = Number(prompt('Input c'));
     
@@ -9,19 +10,14 @@ calcQuad();
     
     if (discr === 0) {
        result = 'there is only one root';
-    }
-    else if (discr < 0){
+    } else if (discr < 0) {
         result = 'try again';
-    }
-    if ( discr > 0) {
-        var x1 = ( - b + Math.sqrt(discr))/ (2 * a);
-        var x2 = ( - b - Math.sqrt(discr))/ (2 * a);
-        
+    } else if ( discr > 0) {
+        var x1 = ( - b + Math.sqrt(discr)) / (2 * a);
+        var x2 = ( - b - Math.sqrt(discr)) / (2 * a);
+       
         result = 'x1 = ' + x1 + ', x2 = ' + x2;
     }
     
-    var result = calcQuad(x);
     document.write(result);
-}
-
- 
+    }
